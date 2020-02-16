@@ -1,2 +1,5 @@
 Datasets/
 *.csv
+Pictures/.DS_Store
+.ipynb_checkpoints/
+
