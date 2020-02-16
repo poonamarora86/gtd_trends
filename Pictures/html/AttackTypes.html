@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="80b970be-ff07-46c9-8d84-c4f6d56792a1" data-root-id="4635"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4737">
+          {"a5b5d2d4-6108-4186-8340-50ca99211b7f":{"roots":{"references":[{"attributes":{"text":"Types of Attacks globally over the uear(1970-2018)"},"id":"4636","type":"Title"},{"attributes":{"end_angle":{"expr":{"id":"4660","type":"CumSum"},"units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"inner_radius":{"units":"data","value":0.15},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"outer_radius":{"units":"data","value":0.25},"start_angle":{"expr":{"id":"4659","type":"CumSum"},"units":"rad"},"x":{"value":0},"y":{"value":1}},"id":"4664","type":"AnnularWedge"},{"attributes":{"callback":null,"data":{"AttackType":["Armed Assault","Assassination","Bombing/Explosion","Facility/Infrastructure Attack","Hijacking","Hostage Taking (Barricade Incident)","Hostage Taking (Kidnapping)","Unarmed Assault","Unknown"],"Attacks":[707,1653,2115,683,20,14,53,50,40],"Attacks_Percent":{"__ndarray__":"EL3EZBSBKkDi/KbY6/s+QFEK/wtq0kNAZoV8a8CaKUABdzCiFP7XP7S57td0y9A/FARNvUHK7z/BlLzKmf3tPwF3MKIU/uc/","dtype":"float64","shape":[9]},"Fatalities":{"__ndarray__":"AAAAAACAekAAAAAAAMyYQAAAAAAAdJRAAAAAAAAAJEAAAAAAAAAAQAAAAAAAACJAAAAAAAAAQ0AAAAAAAAAuQAAAAAAAADFA","dtype":"float64","shape":[9]},"Fatalities_Percent":{"__ndarray__":"SoLowlncKECAt2EuUkNHQAPtbp4bMENAG74Zk0jD0j9eY1zrQAWuP+X3Y4T04tA/ANu+ix7T8T8onabc7CTcP5QpEvqU5d8/","dtype":"float64","shape":[9]},"Wounded":{"__ndarray__":"AAAAAACAfkAAAAAAANBwQAAAAAAAXrRAAAAAAAAATkAAAAAAAADwPwAAAAAAABxAAAAAAAAAJkAAAAAAAABKQAAAAAAAAEJA","dtype":"float64","shape":[9]},"Wounded_Percent":{"__ndarray__":"IzV/p0jNH0DdHiZDt4cRQD3yyCOPPFVASB999NFH7z9au0Jg1q6QP93HdCj3Mb0/m8FbxGbwxj9xcGxcHBzrP8USSyyxxOI/","dtype":"float64","shape":[9]},"angle":{"__ndarray__":"n6ZsJhul6j9LYGp4CSb/P9lu/Ytb7QNA0MQrGY696T/n2mxhsR6YP27MZfdI4pA/P9VJ1Hf1rz+gEci5XSauP+fabGGxHqg/","dtype":"float64","shape":[9]},"color":["#3182bd","#6baed6","#9ecae1","#c6dbef","#e6550d","#fd8d3c","#fdae6b","#fdd0a2","#31a354"],"index":[0,1,2,3,4,5,6,7,8]},"selected":{"id":"4679","type":"Selection"},"selection_policy":{"id":"4680","type":"UnionRenderers"}},"id":"4661","type":"ColumnDataSource"},{"attributes":{},"id":"4652","type":"BasicTicker"},{"attributes":{"below":[{"id":"4646","type":"LinearAxis"}],"center":[{"id":"4650","type":"Grid"},{"id":"4655","type":"Grid"},{"id":"4672","type":"Legend"}],"left":[{"id":"4651","type":"LinearAxis"}],"plot_height":550,"renderers":[{"id":"4665","type":"GlyphRenderer"}],"title":{"id":"4636","type":"Title"},"toolbar":{"id":"4657","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"4638","type":"Range1d"},"x_scale":{"id":"4642","type":"LinearScale"},"y_range":{"id":"4640","type":"DataRange1d"},"y_scale":{"id":"4644","type":"LinearScale"}},"id":"4635","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"end":0.5,"start":-0.5},"id":"4638","type":"Range1d"},{"attributes":{"end_angle":{"expr":{"id":"4660","type":"CumSum"},"units":"rad"},"fill_color":{"field":"color"},"inner_radius":{"units":"data","value":0.15},"line_color":{"value":"white"},"outer_radius":{"units":"data","value":0.25},"start_angle":{"expr":{"id":"4659","type":"CumSum"},"units":"rad"},"x":{"value":0},"y":{"value":1}},"id":"4663","type":"AnnularWedge"},{"attributes":{},"id":"4642","type":"LinearScale"},{"attributes":{},"id":"4647","type":"BasicTicker"},{"attributes":{"source":{"id":"4661","type":"ColumnDataSource"}},"id":"4666","type":"CDSView"},{"attributes":{"callback":null,"tooltips":"@AttackType: @Attacks_Percent{0.2f} %"},"id":"4656","type":"HoverTool"},{"attributes":{"axis_label":null,"formatter":{"id":"4669","type":"BasicTickFormatter"},"ticker":{"id":"4647","type":"BasicTicker"},"visible":false},"id":"4646","type":"LinearAxis"},{"attributes":{},"id":"4671","type":"BasicTickFormatter"},{"attributes":{"label":{"field":"AttackType"},"renderers":[{"id":"4665","type":"GlyphRenderer"}]},"id":"4673","type":"LegendItem"},{"attributes":{"data_source":{"id":"4661","type":"ColumnDataSource"},"glyph":{"id":"4663","type":"AnnularWedge"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4664","type":"AnnularWedge"},"selection_glyph":null,"view":{"id":"4666","type":"CDSView"}},"id":"4665","type":"GlyphRenderer"},{"attributes":{},"id":"4669","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"grid_line_color":null,"ticker":{"id":"4652","type":"BasicTicker"}},"id":"4655","type":"Grid"},{"attributes":{"callback":null},"id":"4640","type":"DataRange1d"},{"attributes":{"field":"angle"},"id":"4660","type":"CumSum"},{"attributes":{},"id":"4644","type":"LinearScale"},{"attributes":{"grid_line_color":null,"ticker":{"id":"4647","type":"BasicTicker"}},"id":"4650","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"4656","type":"HoverTool"}]},"id":"4657","type":"Toolbar"},{"attributes":{"click_policy":"mute","items":[{"id":"4673","type":"LegendItem"}],"label_text_font_size":{"value":"4.4pt"},"location":"top_left"},"id":"4672","type":"Legend"},{"attributes":{},"id":"4679","type":"Selection"},{"attributes":{},"id":"4680","type":"UnionRenderers"},{"attributes":{"axis_label":null,"formatter":{"id":"4671","type":"BasicTickFormatter"},"ticker":{"id":"4652","type":"BasicTicker"},"visible":false},"id":"4651","type":"LinearAxis"},{"attributes":{"field":"angle","include_zero":true},"id":"4659","type":"CumSum"}],"root_ids":["4635"]},"title":"Bokeh Application","version":"1.3.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4737').textContent;
+                  var render_items = [{"docid":"a5b5d2d4-6108-4186-8340-50ca99211b7f","roots":{"4635":"80b970be-ff07-46c9-8d84-c4f6d56792a1"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

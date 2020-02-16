@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="2f239989-5dc1-45d8-9cfa-1b439dce5dbb" data-root-id="1346"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1497">
+          {"f688cd2b-a145-4c08-b6fc-f8897226d8f6":{"roots":{"references":[{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"MN_Fatalities_Percent"},"width":{"value":0.2},"x":{"field":"Country","transform":{"id":"1393","type":"Dodge"}}},"id":"1396","type":"VBar"},{"attributes":{"below":[{"id":"1357","type":"CategoricalAxis"}],"center":[{"id":"1360","type":"Grid"},{"id":"1365","type":"Grid"},{"id":"1391","type":"Legend"}],"left":[{"id":"1361","type":"LinearAxis"}],"plot_height":350,"renderers":[{"id":"1383","type":"GlyphRenderer"},{"id":"1397","type":"GlyphRenderer"},{"id":"1412","type":"GlyphRenderer"}],"title":{"id":"1347","type":"Title"},"toolbar":{"id":"1372","type":"Toolbar"},"x_range":{"id":"1349","type":"FactorRange"},"x_scale":{"id":"1353","type":"CategoricalScale"},"y_range":{"id":"1351","type":"Range1d"},"y_scale":{"id":"1355","type":"LinearScale"}},"id":"1346","subtype":"Figure","type":"Plot"},{"attributes":{"text":"Total terrorist events and fatalities in countries in Middle East and North Africa"},"id":"1347","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1366","type":"PanTool"},{"id":"1367","type":"WheelZoomTool"},{"id":"1368","type":"BoxZoomTool"},{"id":"1369","type":"SaveTool"},{"id":"1370","type":"ResetTool"},{"id":"1371","type":"HelpTool"},{"id":"1423","type":"HoverTool"}]},"id":"1372","type":"Toolbar"},{"attributes":{"label":{"value":"Injured"},"renderers":[{"id":"1412","type":"GlyphRenderer"}]},"id":"1422","type":"LegendItem"},{"attributes":{},"id":"1369","type":"SaveTool"},{"attributes":{"data_source":{"id":"1345","type":"ColumnDataSource"},"glyph":{"id":"1395","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1396","type":"VBar"},"selection_glyph":null,"view":{"id":"1398","type":"CDSView"}},"id":"1397","type":"GlyphRenderer"},{"attributes":{},"id":"1355","type":"LinearScale"},{"attributes":{},"id":"1371","type":"HelpTool"},{"attributes":{"axis_label":"Percentage","formatter":{"id":"1388","type":"BasicTickFormatter"},"major_label_text_font_size":{"value":"7pt"},"ticker":{"id":"1362","type":"BasicTicker"}},"id":"1361","type":"LinearAxis"},{"attributes":{"grid_line_color":null,"ticker":{"id":"1358","type":"CategoricalTicker"}},"id":"1360","type":"Grid"},{"attributes":{"source":{"id":"1345","type":"ColumnDataSource"}},"id":"1384","type":"CDSView"},{"attributes":{},"id":"1366","type":"PanTool"},{"attributes":{"fill_color":{"value":"forestgreen"},"line_color":{"value":"forestgreen"},"top":{"field":"MN_Wounded_Percent"},"width":{"value":0.2},"x":{"field":"Country","transform":{"id":"1408","type":"Dodge"}}},"id":"1410","type":"VBar"},{"attributes":{},"id":"1367","type":"WheelZoomTool"},{"attributes":{},"id":"1388","type":"BasicTickFormatter"},{"attributes":{"items":[{"id":"1392","type":"LegendItem"},{"id":"1407","type":"LegendItem"},{"id":"1422","type":"LegendItem"}],"label_text_font_size":{"value":"9pt"},"location":"top_left"},"id":"1391","type":"Legend"},{"attributes":{"dimension":1,"ticker":{"id":"1362","type":"BasicTicker"}},"id":"1365","type":"Grid"},{"attributes":{"source":{"id":"1345","type":"ColumnDataSource"}},"id":"1398","type":"CDSView"},{"attributes":{"range":{"id":"1349","type":"FactorRange"},"value":0.01},"id":"1393","type":"Dodge"},{"attributes":{"label":{"value":"Casualities"},"renderers":[{"id":"1397","type":"GlyphRenderer"}]},"id":"1407","type":"LegendItem"},{"attributes":{"fill_color":{"value":"darkturquoise"},"line_color":{"value":"darkturquoise"},"top":{"field":"MN_Attacks_Percent"},"width":{"value":0.2},"x":{"field":"Country","transform":{"id":"1379","type":"Dodge"}}},"id":"1381","type":"VBar"},{"attributes":{},"id":"1386","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"data":{"Attacks":[2749,208,2534,1,697,26057,2080,117,76,2486,2417,37,6,7,463,2,2438,130,4391,22,2512,7,3673],"Country":["Algeria","Bahrain","Egypt","International","Iran","Iraq","Israel","Jordan","Kuwait","Lebanon","Libya","Morocco","North Yemen","Qatar","Saudi Arabia","South Yemen","Syria","Tunisia","Turkey","United Arab Emirates","West Bank and Gaza Strip","Western Sahara","Yemen"],"Fatalities":{"__ndarray__":"AAAAAACmxUAAAAAAAABGQAAAAAAAAK9AAAAAAAAA8D8AAAAAACybQAAAAAAAkvNAAAAAAABomUAAAAAAAABhQAAAAAAAgE9AAAAAAADAr0AAAAAAADamQAAAAAAAYHJAAAAAAAAACEAAAAAAAAAcQAAAAAAAiIVAAAAAAAAAAAAAAAAAQGLQQAAAAAAAMHdAAAAAAABIu0AAAAAAAMBeQAAAAAAAeJlAAAAAAAAA8D8AAAAAgMPCQA==","dtype":"float64","shape":[23]},"MN_Attacks_Percent":{"__ndarray__":"svLrX0a0FEBwS90voRDZPzXONjG9FRNAEw4k7GPZXj+VintDeP/0P7lDPTf6h0hAS57Ue8lUD0De9NhVtTLMP1toNVQTUcI/C2JyBTG5EkCOBoiGJzQSQCPYhMSt1bE/jgob8Qojhz9RjJ9uN/6KP7qaCtyV5es/Ew4k7GPZbj/h9a3ZpFwSQEue1HvJVM8/a/M6BxaJIECtyViydDWlP6Ic0kdS6xJAUYyfbjf+ij/fFHGq0KkbQA==","dtype":"float64","shape":[23]},"MN_Fatalities_Percent":{"__ndarray__":"WIR4//AsH0DtrCCEjK6fPxuRRRdAUgZAZgkvvZQKRz+b0CMMnJDzP18o5i3RLkxAN5gzlyZL8j/9+QEJPnu4P0FNOmpqrqY/VKu0k3/cBkCtKx86UPz/P8wERNEmdso/DUfjje9HYT86KIklQil0PybMlSi9Ad8/AAAAAAAAAAA8voi2EZgnQFCVFccqstA/xFlJTsWkE0AIM8vtKiS2P7svkuGrVvI/ZgkvvZQKRz9OgTyecAUbQA==","dtype":"float64","shape":[23]},"MN_Wounded_Percent":{"__ndarray__":"FV0G9Z6vEEA4+XchASa2P9FZ36fP/wFACM7vTLBhdj/EmbM6w0P+P6y+YnywKk9AyeJV69ZQDEC0pYX/KeS+P/dYG7xRfME/qBBHpdHcE0BVTQ7LeeD6P0khz/psULc/C2jqu5XXPT+JdK6oKT94PzDNHnFwJuk/C2jqu5XXTT9vobFktFIcQO/hkf9Yzcs/6i5Dd1NnEkDKx41W5i2JPxPh2gOdAfg/C2jqu5XXXT+fSSxYMRYSQA==","dtype":"float64","shape":[23]},"Wounded":{"__ndarray__":"AAAAAIDkwUAAAAAAAMBnQAAAAAAATbNAAAAAAAAAKEAAAAAAADqwQAAAAADQtQBBAAAAAABdvkAAAAAAAJBwQAAAAAAAwHJAAAAAAIBMxUAAAAAAANKsQAAAAAAAAGlAAAAAAAAA8D8AAAAAAAAqQAAAAAAA+JpAAAAAAAAAAEAAAAAAAF/OQAAAAAAA0H1AAAAAAAC8w0AAAAAAAAA7QAAAAAAAvqlAAAAAAAAAEEAAAAAAAGXDQA==","dtype":"float64","shape":[23]},"index":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]},"selected":{"id":"1405","type":"Selection"},"selection_policy":{"id":"1404","type":"UnionRenderers"}},"id":"1345","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"1345","type":"ColumnDataSource"},"glyph":{"id":"1410","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1411","type":"VBar"},"selection_glyph":null,"view":{"id":"1413","type":"CDSView"}},"id":"1412","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Terrorist Incidents","@MN_Attacks_Percent%"],["Casualties","@MN_Fatalities_Percent"],["Injured","@MN_Wounded_Percent"]]},"id":"1423","type":"HoverTool"},{"attributes":{"label":{"value":"Total Incidents"},"renderers":[{"id":"1383","type":"GlyphRenderer"}]},"id":"1392","type":"LegendItem"},{"attributes":{},"id":"1358","type":"CategoricalTicker"},{"attributes":{},"id":"1370","type":"ResetTool"},{"attributes":{"range":{"id":"1349","type":"FactorRange"},"value":-0.25},"id":"1379","type":"Dodge"},{"attributes":{"fill_color":{"value":"indianred"},"line_color":{"value":"indianred"},"top":{"field":"MN_Fatalities_Percent"},"width":{"value":0.2},"x":{"field":"Country","transform":{"id":"1393","type":"Dodge"}}},"id":"1395","type":"VBar"},{"attributes":{"range":{"id":"1349","type":"FactorRange"},"value":0.27},"id":"1408","type":"Dodge"},{"attributes":{"data_source":{"id":"1345","type":"ColumnDataSource"},"glyph":{"id":"1381","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1382","type":"VBar"},"selection_glyph":null,"view":{"id":"1384","type":"CDSView"}},"id":"1383","type":"GlyphRenderer"},{"attributes":{"source":{"id":"1345","type":"ColumnDataSource"}},"id":"1413","type":"CDSView"},{"attributes":{"overlay":{"id":"1390","type":"BoxAnnotation"}},"id":"1368","type":"BoxZoomTool"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1390","type":"BoxAnnotation"},{"attributes":{"formatter":{"id":"1386","type":"CategoricalTickFormatter"},"major_label_orientation":0.7853981633974483,"major_label_text_font_size":{"value":"7pt"},"ticker":{"id":"1358","type":"CategoricalTicker"}},"id":"1357","type":"CategoricalAxis"},{"attributes":{"callback":null,"end":65},"id":"1351","type":"Range1d"},{"attributes":{"callback":null,"factors":["Algeria","Bahrain","Egypt","International","Iran","Iraq","Israel","Jordan","Kuwait","Lebanon","Libya","Morocco","North Yemen","Qatar","Saudi Arabia","South Yemen","Syria","Tunisia","Turkey","United Arab Emirates","West Bank and Gaza Strip","Western Sahara","Yemen"],"range_padding":0.1},"id":"1349","type":"FactorRange"},{"attributes":{},"id":"1404","type":"UnionRenderers"},{"attributes":{},"id":"1362","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"MN_Wounded_Percent"},"width":{"value":0.2},"x":{"field":"Country","transform":{"id":"1408","type":"Dodge"}}},"id":"1411","type":"VBar"},{"attributes":{},"id":"1405","type":"Selection"},{"attributes":{},"id":"1353","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"MN_Attacks_Percent"},"width":{"value":0.2},"x":{"field":"Country","transform":{"id":"1379","type":"Dodge"}}},"id":"1382","type":"VBar"}],"root_ids":["1346"]},"title":"Bokeh Application","version":"1.3.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1497').textContent;
+                  var render_items = [{"docid":"f688cd2b-a145-4c08-b6fc-f8897226d8f6","roots":{"1346":"2f239989-5dc1-45d8-9cfa-1b439dce5dbb"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

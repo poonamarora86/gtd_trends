@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="a0535d95-d5c2-4fcd-8d35-5aa6af83df2a" data-root-id="1104"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1206">
+          {"f528bcc7-9a53-4f5f-a297-c8a35ba20efe":{"roots":{"references":[{"attributes":{"end_angle":{"expr":{"id":"1129","type":"CumSum"},"units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"inner_radius":{"units":"data","value":0.15},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"outer_radius":{"units":"data","value":0.25},"start_angle":{"expr":{"id":"1128","type":"CumSum"},"units":"rad"},"x":{"value":0},"y":{"value":1}},"id":"1133","type":"AnnularWedge"},{"attributes":{"dimension":1,"grid_line_color":null,"ticker":{"id":"1121","type":"BasicTicker"}},"id":"1124","type":"Grid"},{"attributes":{"source":{"id":"1130","type":"ColumnDataSource"}},"id":"1135","type":"CDSView"},{"attributes":{},"id":"1113","type":"LinearScale"},{"attributes":{"axis_label":null,"formatter":{"id":"1140","type":"BasicTickFormatter"},"ticker":{"id":"1116","type":"BasicTicker"},"visible":false},"id":"1115","type":"LinearAxis"},{"attributes":{},"id":"1149","type":"Selection"},{"attributes":{"text":"Types of Weapons used globally over the uear(1970-2018)"},"id":"1105","type":"Title"},{"attributes":{"end_angle":{"expr":{"id":"1129","type":"CumSum"},"units":"rad"},"fill_alpha":{"value":0.6},"fill_color":{"field":"color"},"inner_radius":{"units":"data","value":0.15},"line_alpha":{"value":0.6},"line_color":{"value":"white"},"outer_radius":{"units":"data","value":0.25},"start_angle":{"expr":{"id":"1128","type":"CumSum"},"units":"rad"},"x":{"value":0},"y":{"value":1}},"id":"1132","type":"AnnularWedge"},{"attributes":{},"id":"1111","type":"LinearScale"},{"attributes":{"callback":null,"tooltips":"@WeaponType: @Attacks_Percent{0.2f} %"},"id":"1125","type":"HoverTool"},{"attributes":{},"id":"1148","type":"UnionRenderers"},{"attributes":{},"id":"1121","type":"BasicTicker"},{"attributes":{},"id":"1140","type":"BasicTickFormatter"},{"attributes":{"grid_line_color":null,"ticker":{"id":"1116","type":"BasicTicker"}},"id":"1119","type":"Grid"},{"attributes":{"callback":null},"id":"1109","type":"DataRange1d"},{"attributes":{"callback":null,"end":0.5,"start":-0.5},"id":"1107","type":"Range1d"},{"attributes":{"click_policy":"mute","items":[{"id":"1142","type":"LegendItem"}],"label_text_font_size":{"value":"5.3pt"},"location":"top_left"},"id":"1141","type":"Legend"},{"attributes":{"field":"angle","include_zero":true},"id":"1128","type":"CumSum"},{"attributes":{"below":[{"id":"1115","type":"LinearAxis"}],"center":[{"id":"1119","type":"Grid"},{"id":"1124","type":"Grid"},{"id":"1141","type":"Legend"}],"left":[{"id":"1120","type":"LinearAxis"}],"plot_height":550,"renderers":[{"id":"1134","type":"GlyphRenderer"}],"title":{"id":"1105","type":"Title"},"toolbar":{"id":"1126","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"1107","type":"Range1d"},"x_scale":{"id":"1111","type":"LinearScale"},"y_range":{"id":"1109","type":"DataRange1d"},"y_scale":{"id":"1113","type":"LinearScale"}},"id":"1104","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1116","type":"BasicTicker"},{"attributes":{"axis_label":null,"formatter":{"id":"1138","type":"BasicTickFormatter"},"ticker":{"id":"1121","type":"BasicTicker"},"visible":false},"id":"1120","type":"LinearAxis"},{"attributes":{"callback":null,"data":{"Attacks":[94166,59873,10984,3796,16482],"Attacks_Percent":{"__ndarray__":"F6G85r9LSUCIgS/UbxVAQLUmEBHqmhdAJ5xi8MhQAEC0AOIR1rUhQA==","dtype":"float64","shape":[5]},"Fatalities":{"__ndarray__":"AAAAADAhBkEAAAAA4DkGQQAAAAAACLdAAAAAAAD8xEAAAAAA4DHnQA==","dtype":"float64","shape":[5]},"Fatalities_Percent":{"__ndarray__":"KzUfPeozRUB6PoGKkUtFQKhOinsPEfY/OuqHxgEbBEAI7WqALjkmQA==","dtype":"float64","shape":[5]},"WeaponType":["Explosives","Firearms","Incendiary","Melee","Unknown"],"Wounded":{"__ndarray__":"AAAAAJT9F0EAAAAA8OjzQAAAAAAA+LVAAAAAAAAbtkAAAAAAwEvTQA==","dtype":"float64","shape":[5]},"Wounded_Percent":{"__ndarray__":"vwaOouxuU0DDLm49uSAwQN0YfFOqy/E/1hj9SATo8T8zGZF0ykIPQA==","dtype":"float64","shape":[5]},"angle":{"__ndarray__":"E/CYNjmLCUCuruiHyz0AQFX0vkgl1tc/LO+Bj7l5wD/J99qfRuLhPw==","dtype":"float64","shape":[5]},"color":["#1f77b4","#ff7f0e","#2ca02c","#d62728","#9467bd"],"index":[2,4,5,6,10]},"selected":{"id":"1149","type":"Selection"},"selection_policy":{"id":"1148","type":"UnionRenderers"}},"id":"1130","type":"ColumnDataSource"},{"attributes":{"field":"angle"},"id":"1129","type":"CumSum"},{"attributes":{"label":{"field":"WeaponType"},"renderers":[{"id":"1134","type":"GlyphRenderer"}]},"id":"1142","type":"LegendItem"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1125","type":"HoverTool"}]},"id":"1126","type":"Toolbar"},{"attributes":{"data_source":{"id":"1130","type":"ColumnDataSource"},"glyph":{"id":"1132","type":"AnnularWedge"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1133","type":"AnnularWedge"},"selection_glyph":null,"view":{"id":"1135","type":"CDSView"}},"id":"1134","type":"GlyphRenderer"},{"attributes":{},"id":"1138","type":"BasicTickFormatter"}],"root_ids":["1104"]},"title":"Bokeh Application","version":"1.3.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1206').textContent;
+                  var render_items = [{"docid":"f528bcc7-9a53-4f5f-a297-c8a35ba20efe","roots":{"1104":"a0535d95-d5c2-4fcd-8d35-5aa6af83df2a"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
