@@ -8,6 +8,21 @@ requirements.txt lists all the required dependencies.
 
 ### Run locally
 
+Please note that program at the moment assumes that you create a pickle file manually from the main dataset.
+Please note that this is quite a big file so I could not commit it into git.
+
+I did that to have faster iteration time because normal xlsx file was very costly to read compared to pickle file.
+
+```
+
+import pandas as pd
+
+GTD = pd.read_excel("Datasets/GTD_Dataset.xlsx")
+GTD.to_pickle("Datasets/GTD_Dataset.pkl")
+
+```
+
+
 Once you have all the deps install you can run the dashboard using:
 
 ```bokeh serve --show dashboard.py```
