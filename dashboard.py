@@ -256,13 +256,13 @@ def create_bar_data(year, group, finalcol):
   Casualities['Fatalities_Percent'] = Casualities['Fatalities']*100/Casualities['Fatalities'].sum()
   Casualities['Wounded_Percent'] = Casualities['Wounded']*100/Casualities['Wounded'].sum()
   Casualities = Casualities.sort_values(by=['Attacks_Percent', 'Fatalities_Percent', 'Wounded_Percent'], ascending=False)
-
-  return Casualities.head(11)
+  Casualities = Casualities.head(11)
+  lists = Casualities[finalcol].tolist()
+  return (lists, Casualities)
 
 def create_bar(group, finalcol, y_scale=(0,60)):
-  source = ColumnDataSource(data=create_bar_data(start_year, group, finalcol))
-
-  listOf = source.data[finalcol].tolist()
+  (listOf, actualData) = create_bar_data(start_year, group, finalcol)
+  source = ColumnDataSource(data=actualData)
 
   p3 = figure(x_range=listOf, y_range=y_scale, plot_height=500, title=f"By {finalcol}")
 
@@ -334,12 +334,19 @@ def update_plot(attr, old, new):
     new_data = heat_data(new)
     new_data_map = json_data(new)
     rec.data_source.data = new_data
-    attacks_bar.data_source.data = create_bar_data(new, 'region_txt', 'Region')
-    fatalities_bar.data_source.data = create_bar_data(new, 'region_txt', 'Region')
-    wounded_bar.data_source.data = create_bar_data(new, 'region_txt', 'Region')
-    attacks_bar_city.data_source.data = create_bar_data(new, 'city', 'City')
-    fatalities_bar_city.data_source.data = create_bar_data(new, 'city', 'City')
-    wounded_bar_city.data_source.data = create_bar_data(new, 'city', 'City')
+    (s, regionData) = create_bar_data(new, 'region_txt', 'Region')
+    attacks_bar.data_source.data = regionData
+    fatalities_bar.data_source.data = regionData
+    wounded_bar.data_source.data = regionData
+    bar_region.x_range.factors = s
+
+    (listOf, actualData) = create_bar_data(new, 'city', 'City')
+    bar_region_city.x_range.factors = listOf
+
+    attacks_bar_city.data_source.data = actualData
+    fatalities_bar_city.data_source.data = actualData
+    wounded_bar_city.data_source.data = actualData
+
     attack_types.data_source.data = year_filter_gtd(new, 'attacktype1_txt', 'AttackType')
     weapon_types.data_source.data = year_filter_gtd(new, 'weaptype1_txt', 'WeaponType')
     target_types.data_source.data = year_filter_gtd(new, 'targtype1_txt', 'TargetType')
