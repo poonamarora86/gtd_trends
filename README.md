@@ -27,7 +27,7 @@ Once you have all the deps install you can run the dashboard using:
 
 ```bokeh serve --show dashboard.py```
 
-It will open the dashboard in a browser window. Also hosted at: http://ec2-3-12-198-204.us-east-2.compute.amazonaws.com:8000/dashboard for convinience.
+It will open the dashboard in a browser window. Also hosted at: http://ec2-3-12-198-204.us-east-2.compute.amazonaws.com:8000/dashboard for convinience. (Currently it doesn't work)
 
 
 ### Analysis
@@ -44,3 +44,4 @@ I tried to analyse data mainly from three dimensions:
 ### Thank you
 
 Please feel free to reach me in case of any questions!
+
