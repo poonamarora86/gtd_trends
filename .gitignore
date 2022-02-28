@@ -3,4 +3,6 @@ Datasets/
 Pictures/.DS_Store
 .ipynb_checkpoints/
 *.html
-*.pngl
+*.png
+Pictures/
+.DS_Store
